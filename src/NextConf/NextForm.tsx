@@ -161,7 +161,7 @@ export const NextForm: React.FC<IHubspotCustomSubscribeFormsProps> = ({ classNam
             <input
               className={css.email}
               type="email"
-              placeholder="Email Address"
+              placeholder="Enter Email Address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
