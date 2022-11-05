@@ -1,0 +1,156 @@
+.hubspotSubscribeForm {
+  display: flex;
+  flex-direction: column;
+
+  .email {
+    height: 2.65rem;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding-left: 0.85rem;
+    color: #33475b;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 26.6px;
+  }
+
+  .captchaLabel {
+    align-self: center;
+    padding-top: 10px;
+    color: #efb9ca;
+    font-size: 0.76rem;
+    line-height: 17px;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .consent {
+    margin-top: 0.75rem;
+    line-height: initial;
+
+    .checkbox {
+      cursor: pointer;
+      width: auto;
+      height: auto;
+      padding: 0;
+      margin: 3px 5px 3px 0px;
+      line-height: normal;
+      border: none;
+    }
+
+    .label {
+      color: #60646c;
+      font-size: 0.76rem;
+      line-height: 17px;
+    }
+  }
+
+  .errorMessage {
+    color: #f2545b;
+    line-height: 18px;
+    white-space: normal;
+    font-weight: normal;
+    font-size: 0.82rem;
+    margin: 0.5rem 0;
+  }
+
+  .submit {
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 9.41rem;
+    height: 2.12rem;
+    border: 1px solid #839398;
+    border-radius: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 0.76rem;
+    font-weight: bold;
+  }
+
+  &.burgerMenu {
+    .email {
+      border: none;
+    }
+
+    .submit {
+      background: transparent;
+    }
+
+    .captchaLabel {
+      padding-top: 10px;
+      color: #839398;
+      font-size: 0.76rem;
+      line-height: 17px;
+      a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.subscribeModal {
+    .email {
+      border: 1px solid #cdcdcd;
+    }
+
+    .consent {
+      align-self: center;
+    }
+
+    .captchaLabel {
+      text-align: center;
+      padding-top: 10px;
+      color: #a4a5a4;
+      font-size: 0.76rem;
+      line-height: 17px;
+      a {
+        color: #4b4b4b;
+        text-decoration: underline;
+      }
+    }
+
+    .errorMessage {
+      align-self: center;
+    }
+
+    .submit {
+      align-self: center;
+      background-color: #d61e57;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &.subscribeForm {
+    .email {
+      border: none;
+    }
+
+    .consent {
+      align-self: center;
+
+      .label {
+        color: white;
+      }
+    }
+
+    .errorMessage {
+      align-self: center;
+    }
+
+    .submit {
+      align-self: center;
+      background: white;
+      color: #d61e57;
+      border: none;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.thanksMessage {
+  text-align: center;
+  color: #4b4b4b;
+  font-size: 17px;
+}

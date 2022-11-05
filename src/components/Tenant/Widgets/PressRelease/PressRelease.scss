@@ -1,0 +1,247 @@
+.pageHeader {
+  max-width: 960px;
+  margin: 60px auto 0 auto;
+  p {
+    opacity: 0.5;
+    color: #052530;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
+  h2 {
+    margin-top: 5px;
+    color: #052530;
+    font-size: 52px;
+    letter-spacing: -0.83px;
+    line-height: 55px;
+  }
+  .signUpBtn {
+    width: fit-content;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 0 0 0 30px;
+    .signUpBtn {
+      margin: 40px 0 0 10px;
+      top: 0;
+      left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    margin: 20px 0 0 0;
+    padding: 0 30px 0 0px;
+    p {
+      margin-left: 34px;
+    }
+    h2 {
+      margin-left: 34px;
+      font-size: 33px;
+      letter-spacing: -0.52px;
+      line-height: 35px;
+      white-space: nowrap;
+    }
+    .signUpBtn {
+      margin-top: 0;
+      margin-left: 30px;
+      top: 40px;
+      left: 18px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.bannerImage {
+  width: 1164px;
+  margin: 0px auto 0 auto;
+  @media screen and (max-width: 1000px) {
+    margin-top: 120px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+  }
+
+  .desktop {
+    margin-top: 60px;
+    max-height: 776px;
+    max-width: 1164px;
+    @media screen and (max-width: 1000px) {
+      max-width: 100%;
+      padding: 0 30px;
+      display: flex;
+      position: relative;
+      margin: 60px auto 0 auto;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .mobile {
+      margin-top: 90px;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      height: auto;
+      width: 402px;
+      padding: 30px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+.background {
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+  max-width: 100%;
+  margin-top: -100px;
+}
+.pressBody {
+  max-width: 960px;
+  margin: 0px auto 0 auto;
+  display: flex;
+
+  .pressReleases {
+    margin-top: 110px;
+    @media screen and (max-width: 767px) {
+      margin-top: 50px;
+    }
+    .pressRelease {
+      width: 632px;
+      position: relative;
+      padding: 30px 0;
+      border-bottom: 1px solid #e3e3e3;
+
+      p {
+        color: #d61e57;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 15px;
+      }
+      h3 {
+        margin-top: 10px;
+        max-width: 460px;
+        color: #052530;
+        font-size: 26px;
+        letter-spacing: -0.41px;
+        line-height: 33px;
+      }
+    }
+    .pressButton {
+      position: absolute;
+      top: 40%;
+      right: 0;
+      width: fit-content;
+    }
+    .loadBtn {
+      margin-top: 80px;
+      width: 130px;
+    }
+    @media screen and (max-width: 1000px) {
+      max-width: 100%;
+      padding: 0 30px;
+      .pressRelease {
+        width: 100%;
+      }
+      .pressButton {
+        position: relative;
+        margin-top: 30px;
+      }
+      .loadBtn {
+        margin: 60px auto 0 auto;
+      }
+    }
+  }
+  .pressKitContainer {
+    margin-left: 30px;
+    margin-top: 140px;
+
+    .pressKit {
+      height: 310px;
+      width: 300px;
+      border-radius: 9px;
+      background-color: #d61e57;
+      padding: 25px 30px 35px 30px;
+      cursor: pointer;
+
+      h3 {
+        color: #fcfcfd;
+        font-size: 26px;
+        letter-spacing: -0.41px;
+        line-height: 33px;
+      }
+      p {
+        margin-top: 10px;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 17px;
+        letter-spacing: 0;
+        line-height: 26.6px;
+      }
+      .pressKitDownload {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        img {
+          width: 36px;
+          height: 36px;
+        }
+        p {
+          margin: 5px 0 0 15px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    .pressKitContainer {
+      margin: 80px auto 0px auto;
+      .pressKit {
+        height: 278px;
+        width: 354px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.bottomCTA {
+  width: 747px;
+  margin: 0 auto 180px auto;
+  hr {
+    margin: 80px 0;
+    width: 962px;
+    color: #e3e3e3;
+  }
+  h3 {
+    color: #052530;
+    font-size: 26px;
+    letter-spacing: -0.41px;
+    line-height: 31px;
+    text-align: center;
+  }
+  p {
+    margin-top: 15px;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 26.6px;
+    text-align: center;
+  }
+  .buttonCTA {
+    margin: 30px auto 0 auto;
+    width: fit-content;
+  }
+  @media screen and (max-width: 1000px) {
+    max-width: 354px;
+  }
+}

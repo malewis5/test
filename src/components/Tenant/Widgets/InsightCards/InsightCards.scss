@@ -1,0 +1,94 @@
+$card-hover: 20px;
+
+.container {
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+
+    .card {
+      height: 453px;
+      width: 301px;
+      border-radius: 9px;
+      background-color: #ffffff;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05);
+      margin-right: 30px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      flex: 0 0 auto;
+      position: relative;
+      top: 0;
+      transition: top ease 0.2s;
+
+      .cardImage {
+        width: 301px;
+        max-height: 183px;
+        border-radius: 9px 9px 0 0;
+      }
+
+      .cardCategory {
+        color: #d61e57;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 15px;
+        float: left;
+        margin: 27px 0 0 27px;
+      }
+
+      .cardText {
+        text-align: left;
+        margin: 60px 27px 0 27px;
+        color: #052530;
+        font-size: 26px;
+        letter-spacing: -0.41px;
+        line-height: 33px;
+      }
+
+      .cardBtn {
+        cursor: pointer;
+        width: fit-content;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+      }
+
+      .ebookImg {
+        width: 301px;
+        height: 473px;
+      }
+    }
+
+    .card:hover {
+      top: -$card-hover;
+
+      .cardText {
+        color: #d61e57;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    overflow-x: auto;
+    padding-top: $card-hover;
+    margin-top: -$card-hover;
+    justify-content: unset;
+
+    .row {
+      padding: 0 25px 0 25px;
+
+      .card {
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+}

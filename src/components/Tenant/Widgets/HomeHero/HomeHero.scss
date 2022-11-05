@@ -1,0 +1,154 @@
+.heroContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+
+  .backgroundClouds {
+    background-image: url('/static/Clouds.png');
+    width: 100%;
+    height: 875px;
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-top: -60px;
+  }
+
+  .backgroundMark {
+    background-image: url('/static/Mark.png');
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-top: 100px;
+    z-index: 2;
+  }
+
+  .backgroundMountain {
+    background-image: url('/static/Banner_Background.png');
+    width: 100%;
+    height: 935px;
+    position: absolute;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-top: 153px;
+  }
+
+  .foregroundMan {
+    background-image: url('/static/Banner_Foreground.png');
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    z-index: 4;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    margin-top: 100px;
+  }
+
+  .content {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 168px;
+
+    .title {
+      z-index: 4;
+      text-align: center;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 70px;
+        letter-spacing: -1.11px;
+        line-height: 81px;
+
+        span {
+          font-family: inherit;
+        }
+      }
+    }
+
+    .titleMob {
+      display: none;
+    }
+
+    .subscribeBox {
+      z-index: 4;
+      margin-top: 660px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heroContainer {
+    .backgroundClouds {
+      margin-top: 40px;
+    }
+
+    .content {
+      .subscribeBox {
+        margin-top: 430px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heroContainer {
+    .backgroundClouds {
+      margin-top: -180px;
+      width: 800px;
+    }
+
+    .backgroundMountain {
+      margin-top: -80px;
+      width: 800px;
+    }
+
+    .backgroundMark {
+      margin-top: -80px;
+      width: 800px;
+    }
+
+    .foregroundMan {
+      margin-top: -100px;
+      width: 800px;
+    }
+
+    .content {
+      .title {
+        display: none;
+      }
+
+      .titleMob {
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+        text-align: center;
+        margin: 0 auto;
+
+        h1 {
+          font-size: 33px;
+          letter-spacing: -0.52px;
+          line-height: 35px;
+          padding: 0 30px;
+          white-space: nowrap;
+
+          span {
+            font-family: inherit;
+          }
+        }
+      }
+
+      .subscribeBox {
+        margin-top: 21.5rem;
+      }
+    }
+  }
+}

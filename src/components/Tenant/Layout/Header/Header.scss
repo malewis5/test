@@ -1,0 +1,116 @@
+.headerContainer {
+  width: 100%;
+  height: 128px;
+  transition: height 0.2s;
+  border-bottom: 1px solid #efefef;
+  z-index: 10;
+  position: fixed;
+  background-color: white;
+
+  .pinkBar {
+    height: 4px;
+    width: 100%;
+    background-color: #d61e57;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+
+    .logo {
+      cursor: pointer;
+      margin-left: 50px;
+      width: 272px;
+    }
+
+    .rightBox {
+      display: flex;
+      margin: 0 50px 0 auto;
+
+      .verticalLine {
+        margin: 0 30px 0 -20px;
+        height: 30px;
+        border-left: 1px solid #d4d4d4;
+      }
+
+      .signUp {
+        margin-right: 30px;
+
+        a {
+          color: #4b4b4b;
+          font-size: 13px;
+          line-height: 15px;
+          text-transform: uppercase;
+          white-space: nowrap;
+          cursor: pointer;
+        }
+      }
+
+      .contactBtn {
+        margin-top: -7px;
+        width: fit-content;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+.notScrolling {
+  background-color: transparent !important;
+}
+
+.scrolling {
+  height: 96px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .headerContainer {
+    .header {
+      .logo {
+        width: 200px;
+      }
+
+      .rightBox {
+        margin-left: 10px;
+
+        .verticalLine {
+          margin-left: -5px;
+          margin-right: 15px;
+        }
+
+        .signUp {
+          margin-right: 15px;
+
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .headerContainer {
+    height: 108px !important;
+
+    .header {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+    }
+
+    .mobile i {
+      font-size: 1.5rem;
+    }
+  }
+}

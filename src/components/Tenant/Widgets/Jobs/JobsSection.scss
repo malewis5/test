@@ -1,0 +1,65 @@
+.background {
+  width: 100%;
+  //background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%) !important;
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+.jobContainer {
+  margin: auto;
+  padding: 0 30px;
+  @media (min-width: 936px) {
+    margin-top: 80px;
+  }
+  width: 960px;
+  @media (max-width: 936px) {
+    width: 100%;
+  }
+}
+.title {
+  margin-top: 10px;
+  @media (min-width: 936px) {
+    float: left;
+  }
+  color: #052530;
+  font-family: 'Lora';
+  font-size: 26px;
+  letter-spacing: -0.41px;
+  line-height: 33px;
+}
+.jobCat {
+  color: #d61e57;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+.detailsButton {
+  box-sizing: border-box;
+  height: 37px;
+  width: 125px;
+  border: 1px solid #d61e57;
+  border-radius: 18px;
+  background-color: #ffffff;
+  @media (min-width: 936px) {
+    float: right;
+  }
+  @media (max-width: 936px) {
+    margin-top: 30px;
+  }
+  color: #d61e57;
+  cursor: pointer;
+}
+.line {
+  border: 1px solid #e3e3e3;
+}
+.body {
+  margin-top: 70px;
+}
+.jobsButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .contactBtn {
+    padding: 0 10px 0 10px;
+  }
+}

@@ -1,0 +1,129 @@
+html {
+  height: 100%;
+}
+.container {
+  text-align: center;
+  background: black;
+  min-height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: auto auto auto;
+  padding: 20px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    a {
+      width: 205px;
+      text-decoration: none;
+    }
+    @media only screen and (max-width: 960px) {
+      flex-direction: column;
+    }
+    .peakLogo {
+      padding-top: 30px;
+      height: 50vmin;
+      pointer-events: none;
+    }
+    .nextLogo {
+      padding-top: 30px;
+      height: 50vmin;
+      pointer-events: none;
+    }
+  }
+
+  .body {
+    max-width: 1024px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: block;
+    & > * {
+      margin: 24px 0px;
+    }
+
+    .formContainer {
+      input[type='submit'] {
+        background-color: #d71d57;
+        border-radius: 5px !important;
+        border: 1px solid #d71d57;
+
+        @media only screen and (max-width: 960px) {
+          width: 100%;
+        }
+      }
+      input[type='email'] {
+        border: 1px solid #2b2b2b;
+        border-radius: 5px;
+        box-shadow: 0 4px 14px 0 #2b2b2b;
+        @media only screen and (max-width: 960px) {
+          width: 100%;
+        }
+      }
+    }
+    .valuePropContainer {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      font-size: 16px;
+      .gridItem {
+        h3 {
+          color: white;
+        }
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 10px;
+        flex-direction: column;
+        text-align: left;
+        border: 1px solid #2b2b2b;
+        border-radius: 5px;
+        box-shadow: 0 4px 14px 0 #2b2b2b;
+        p {
+          margin: 6px 0px;
+        }
+      }
+      @media only screen and (min-width: 960px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .giveawayContainer {
+      font-size: 16px;
+      div {
+        @media only screen and (max-width: 960px) {
+          width: 100%;
+        }
+        width: 50%;
+        border: 1px solid #2b2b2b;
+        border-radius: 5px;
+        box-shadow: 0 4px 14px 0 #2b2b2b;
+        padding: 10px;
+        p {
+          margin: 6px 0px;
+        }
+      }
+      h3 {
+        color: white;
+      }
+
+      flex-direction: column;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  footer {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 20px;
+    .textLogo {
+      margin-top: 5px;
+      height: 23px;
+      width: 203px;
+    }
+  }
+}

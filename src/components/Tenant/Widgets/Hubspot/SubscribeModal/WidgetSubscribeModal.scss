@@ -1,0 +1,21 @@
+.signUpBtnTop {
+  width: max-content;
+  margin-top: 60px;
+  margin-left: 0;
+  float: right;
+}
+.signUpBtnBottom {
+  width: max-content;
+}
+
+@media screen and (max-width: 767px) {
+  .signUpBtnTop {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-left: unset;
+    float: left;
+  }
+}

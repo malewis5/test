@@ -1,0 +1,209 @@
+.pageHeader {
+  max-width: 960px;
+  margin: 60px auto 0 auto;
+
+  p {
+    opacity: 0.5;
+    color: #052530;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 15px;
+  }
+
+  h2 {
+    margin-top: 5px;
+    color: #052530;
+    font-size: 52px;
+    letter-spacing: -0.83px;
+    line-height: 55px;
+  }
+
+  .signUpBtn {
+    width: max-content;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+}
+
+.blogPostContainer {
+  width: 100%;
+  margin-top: -60px;
+  margin-bottom: 100px;
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+
+  .categories {
+    max-width: 960px;
+    margin: 115px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    p {
+      margin-right: 25px;
+      opacity: 0.5;
+      color: #052530;
+      font-family: Roboto;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 15px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    p:hover {
+      opacity: 1;
+      color: #d61e57;
+    }
+
+    .clicked {
+      opacity: 1;
+      color: #d61e57;
+    }
+
+    input {
+      margin-top: -15px;
+      position: relative;
+      margin-left: 25px;
+      height: 45px;
+      width: 300px;
+      border: 1px solid #cdcdcd;
+      padding-left: 15px;
+    }
+  }
+
+  .mobileDropdown {
+    display: none;
+  }
+
+  .blogPosts {
+    margin: 80px auto 145px auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .posts {
+      margin: 15px 15px;
+    }
+  }
+
+  .loadBtn {
+    margin: -40px auto 0 auto;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .pageHeader {
+    padding: 0 30px;
+  }
+  .blogPostContainer {
+    .categories {
+      input {
+        right: 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .blogPostContainer {
+    width: 100%;
+    .categories {
+      width: 100%;
+      margin: 50px 0 0 5px;
+      justify-content: center;
+      display: flex;
+      p {
+        display: none;
+      }
+      input {
+        position: relative;
+        width: 600px;
+        margin: 0 auto;
+        right: 5px;
+      }
+    }
+
+    .mobileDropdown {
+      display: flex;
+      background-color: transparent;
+      border: none;
+      padding: 45px 30px 0 30px;
+      font-family: inherit;
+      font-size: inherit;
+      cursor: inherit;
+      line-height: inherit;
+    }
+
+    select {
+      position: relative;
+      margin: 0 auto;
+      width: 600px;
+      padding: 5px 5px 5px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      height: 34px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url(https://storage.googleapis.com/peakactivity-site-assets/partners/downArrow.png) 96% / 15%
+        no-repeat rgb(255, 255, 255);
+      background-size: 10px;
+    }
+
+    select:focus,
+    input:focus {
+      outline: none;
+    }
+
+    .dropInput {
+      height: 45px;
+    }
+    .blogPosts {
+      max-width: 800px;
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pageHeader {
+    h2 {
+      font-size: 33px;
+      letter-spacing: -0.52px;
+      line-height: 35px;
+    }
+    .signUpBtn {
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-top: 30px;
+      margin-left: unset;
+    }
+  }
+
+  .blogPostContainer {
+    margin-bottom: 80px;
+
+    .categories {
+      input {
+        width: 300px;
+      }
+    }
+
+    select {
+      width: 300px;
+    }
+
+    .blogPosts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 80px auto 0 auto;
+      width: 100%;
+    }
+    .loadBtn {
+      margin: 40px auto 0 auto;
+      width: fit-content;
+    }
+  }
+}

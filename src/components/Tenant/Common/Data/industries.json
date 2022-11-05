@@ -1,0 +1,34 @@
+[
+  {
+    "label": "Your Industry? (Optional)",
+    "value": ""
+  },
+  {
+    "label": "Foodservice & Restaurant",
+    "value": "R"
+  },
+  {
+    "label": "Healthcare",
+    "value": "H"
+  },
+  {
+    "label": "Hospitality",
+    "value": "E"
+  },
+  {
+    "label": "Industrial",
+    "value": "I"
+  },
+  {
+    "label": "Schools",
+    "value": "S"
+  },
+  {
+    "label": "Supermarkets",
+    "value": "M"
+  },
+  {
+    "label": "Other",
+    "value": "O"
+  }
+]

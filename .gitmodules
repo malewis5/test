@@ -1,0 +1,3 @@
+[submodule "src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components"]
+	path = src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components
+	url = https://github.com/PeakActivity/omnistudio-frontend-components

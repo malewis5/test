@@ -1,0 +1,103 @@
+@import '../../../Core/scss/variables.scss';
+
+.loadMore {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.loadMoreButton {
+  padding: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  background-color: $color-white;
+  display: inline-block;
+  border: 1px solid;
+  cursor: pointer;
+}
+.onMobileViewHide {
+  display: block;
+  @media (max-width: 425px) {
+    display: none;
+  }
+}
+.onMobileViewShow {
+  padding: 20px;
+  display: none;
+  .filterButton {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  @media (max-width: 425px) {
+    display: block;
+  }
+}
+.mobileViewModelNavigation {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  background: #f4f8fd;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.CatalogNavigationWrap {
+  background: #f4f8fd;
+  border-bottom: 1px solid #ebebeb;
+  @media (max-width: 500px) {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+}
+
+.filterButton {
+  padding: 0 15px 1rem;
+}
+
+.CatalogNavigationGuarantee {
+  border: 1px solid #ebebeb;
+  .guaranteeTitle {
+    margin: 30px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  text-align: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.GuaranteeSection {
+  padding: 4% 5% 0;
+  margin: 30px 0;
+  @media (max-width: 1024px) {
+    padding: 5px 0;
+  }
+}
+
+.styleBreadcrumbs {
+  color: grey;
+  & > div > span > a {
+    color: grey;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.contentTop {
+  padding-bottom: 4rem;
+}
+
+.shownResults {
+  text-align: right;
+  padding-left: 20px;
+  font-size: 1rem;
+  font-weight: 800 !important;
+  background: white;
+  border-top: 0px;
+  padding-bottom: 20px;
+  text-align: left;
+  @media (max-width: 425px) {
+    display: none;
+  }
+}

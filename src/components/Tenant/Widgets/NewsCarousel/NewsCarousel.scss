@@ -1,0 +1,156 @@
+.newsContainer {
+  background-color: #052530;
+  height: 175px;
+
+  .slide {
+    transition-duration: 0.8s;
+  }
+
+  .slide.active {
+    transition-duration: 1.2s ease-in-out;
+  }
+
+  .newsWrapper {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto;
+
+    .image {
+      width: 300px;
+      cursor: pointer;
+
+      img {
+        float: right;
+        max-height: 100px;
+      }
+    }
+
+    .textContainer {
+      cursor: pointer;
+      margin: 0 1.5rem;
+      width: 800px;
+      float: left;
+
+      .newsHeader {
+        opacity: 0.5;
+        color: #ffffff;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+
+      .newsText {
+        margin-top: 5px;
+        color: #ffffff;
+        font-size: 26px;
+        letter-spacing: -0.41px;
+        line-height: 33px;
+      }
+    }
+
+    .arrows {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+
+      .rightArrow {
+        margin-left: 40px;
+        width: 15px;
+        z-index: 1;
+        cursor: pointer;
+
+        i {
+          color: #50656e;
+        }
+
+        i:hover {
+          color: white;
+        }
+      }
+
+      .leftArrow {
+        width: 15px;
+        z-index: 1;
+        cursor: pointer;
+
+        i {
+          color: #50656e;
+        }
+
+        i:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .newsContainer {
+    .newsWrapper {
+      width: 100%;
+      margin-top: 1rem;
+      margin-right: 100px;
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .newsContainer {
+    height: auto;
+    min-height: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .arrows {
+      position: absolute;
+      left: 0;
+      right: 0;
+      justify-content: center;
+      bottom: 50px;
+      @media screen and (max-width: 500px) {
+        bottom: 30px;
+      }
+      .leftArrow {
+        padding-right: 50px;
+      }
+    }
+    .newsWrapper {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+
+      .image {
+        width: auto;
+        position: relative;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+
+        img {
+          max-width: 100px;
+        }
+      }
+
+      .textContainer {
+        position: relative;
+        width: auto;
+        margin: 0 auto;
+        float: none;
+
+        .newsHeader {
+          margin-top: 20px;
+        }
+
+        .newsText {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

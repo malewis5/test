@@ -1,0 +1,112 @@
+.bullets {
+  text-align: center;
+
+  ul {
+    margin-bottom: .5rem;
+
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+
+      &:before {
+        content: '\00a0\2022\00a0\00a0';
+        color: #000;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.contentBackground {
+  background-size: cover;
+  background-position: 70%;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.contentLayout {
+  margin: 0 auto;
+  max-width: 951px !important;
+}
+
+.noContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  min-height: 200px;
+
+  span {
+    font-size: 1.625rem;
+    line-height: 36px;
+  }
+}
+
+.categories {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  padding-top: 40px;
+
+  .categoryLine {
+    margin-bottom: 12px;
+    padding: 0 24px;
+
+    .category {
+      padding: 0 8px;
+    }
+  }
+}
+
+.sepparator {
+  height: 1px;
+  width: 257px;
+  background-color: #979797;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  //text-align: center;
+  color: black;
+  font-weight: 300;
+  // line-height: 24px;
+  padding: 0 24px;
+  margin-bottom: 32px;
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 15px;
+  }
+}
+
+.blogNavContainer {
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 40px;
+
+  .blogNav {
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+
+    a {
+      text-decoration: none !important;
+      color: black;
+    }
+
+  }
+}
+

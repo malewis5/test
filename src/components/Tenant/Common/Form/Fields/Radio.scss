@@ -1,0 +1,27 @@
+.subtext {
+  font-size: 0.85rem;
+}
+
+.formError {
+  color: red;
+  margin-left: 5px;
+  font-size: 0.75rem;
+}
+
+.formField {
+  margin-bottom: 15px;
+}
+
+.checkboxContainer {
+  display: flex;
+  .label {
+    margin-left: 5px;
+    line-height: 1.5;
+    margin-top: -2px;
+  }
+}
+
+.radioContainer {
+  padding-left: 15px;
+  margin-top: 30px;
+}

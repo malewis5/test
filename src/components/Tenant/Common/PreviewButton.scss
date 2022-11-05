@@ -1,0 +1,15 @@
+.previewButton {
+  position: absolute;
+  right: 12px;
+  top: 50px;
+  z-index: 1000;
+  .previewButtonInner {
+    background: #cd773d;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  a {
+    color: black;
+  }
+}

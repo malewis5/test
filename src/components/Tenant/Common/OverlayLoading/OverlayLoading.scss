@@ -1,0 +1,38 @@
+.loadingOverlay {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+
+  &.loadingOverlayModal {
+    position: fixed;
+  }
+}
+
+.loadingTextHidden {
+  position: absolute;
+  left: -999999px;
+}
+
+.loadingModal {
+  background-color: white;
+  padding: 10px 30px 40px;
+  border: 1px solid black;
+}
+
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h5 {
+    margin-bottom: 15px;
+  }
+}

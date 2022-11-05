@@ -1,0 +1,92 @@
+.notFoundContainer {
+  text-align: center;
+  max-width: 100%;
+  margin: -15px auto 100px auto;
+  .gifContainer {
+    .gif {
+      width: 100%;
+      height: auto;
+      img {
+        width: 100%;
+        z-index: 0;
+      }
+    }
+    h2 {
+      margin: -700px 0 0 0;
+      opacity: 0.8;
+      color: #ffffff;
+      font-size: 312px;
+      letter-spacing: -4.95px;
+      line-height: 330px;
+      text-align: center;
+      z-index: 1;
+    }
+  }
+  .textContainer {
+    margin-top: 400px;
+    h3 {
+      margin: 0 auto;
+      font-size: 52px;
+      letter-spacing: -0.83px;
+      line-height: 55px;
+      text-align: center;
+    }
+    p {
+      margin: 30px auto 0 auto;
+      font-size: 17px;
+      letter-spacing: 0;
+      line-height: 26.6px;
+      text-align: center;
+    }
+    .button {
+      margin: 40px auto 0 auto;
+      width: fit-content;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .notFoundContainer {
+    .gifContainer {
+      h2 {
+        margin-top: -500px;
+      }
+    }
+    .textContainer {
+      margin-top: 200px;
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  .notFoundContainer {
+    .gifContainer {
+      h2 {
+        font-size: 150px;
+        margin-top: -350px;
+      }
+    }
+    .textContainer {
+      padding: 0 10px;
+      margin-top: 50px;
+      h3 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .notFoundContainer {
+    .gifContainer {
+      h2 {
+        margin-top: -300px;
+      }
+    }
+    .textContainer {
+      margin-top: 0px;
+      h3 {
+        font-size: 25px;
+        line-height: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+/* Style the accordion section */
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+  i {
+    color: #e2dfdf;
+    font-size: 25px;
+  }
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgb(244, 248, 253);
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(244, 248, 253);
+  transition: background-color 0.6s ease;
+}
+
+.floatRight {
+  margin-left: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover,
+.active {
+  color: #fff;
+  background-color: #30499a !important;
+}
+.accordion.activeTransparent:hover,
+.accordion.activeTransparent {
+  color: rgb(20, 20, 20);
+  background-color: transparent !important;
+}
+
+/* Style the accordion content title */
+.accordion__title {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.6s ease;
+}

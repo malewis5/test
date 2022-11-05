@@ -1,0 +1,26 @@
+.fillCore {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.fillBody {
+  flex: 1 0 auto;
+  background-color: #fff; // add for bg
+}
+
+.fillFooter {
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.fillHeight {
+  height: 100%;
+}
+
+.coreMargin {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 1300px;
+}
+

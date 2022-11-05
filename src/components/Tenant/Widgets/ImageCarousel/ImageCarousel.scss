@@ -1,0 +1,34 @@
+$animationSpeed: 120s;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.imageCarousel {
+  margin: 0 auto;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    animation: scroll $animationSpeed linear infinite;
+
+    .slide {
+      margin: 0 15px;
+      position: relative;
+      img {
+        border-radius: 3%;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px;
+      }
+    }
+  }
+}

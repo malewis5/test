@@ -1,0 +1,103 @@
+.background {
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+}
+@media only screen and (max-width: 767px) {
+  .headers {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background {
+    margin-top: -70px;
+  }
+  .dropdown {
+    display: none;
+  }
+  .headers {
+    padding-top: 100px;
+    margin: 0px auto 0 auto;
+    max-width: 930px;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+  }
+}
+
+.clicked {
+  cursor: pointer;
+  color: #d61e57;
+}
+.notClicked {
+  cursor: pointer;
+  color: #052530;
+  opacity: 0.5;
+}
+.text {
+  padding: 0 30px;
+  max-width: 814px;
+  text-align: center;
+  margin: 60px auto 0 auto;
+}
+.cards {
+  @media (min-width: 768px) {
+    height: 213px;
+    width: 213px;
+  }
+
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 13px 27px -5px rgba(50, 50, 93, 0.15), 0px 8px 16px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.05) 0px 8px 16px -8px;
+  @media screen and (max-width: 600px) {
+    height: 165px;
+    width: 165px;
+    margin: 0 auto 20px auto;
+    padding: 0;
+  }
+  .image {
+    @media screen and (max-width: 767px) {
+      max-width: 150px;
+    }
+  }
+}
+.cardRows {
+  padding-top: 60px;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto 0 auto;
+}
+
+.dropdown {
+  background-color: transparent;
+  border: none;
+  padding: 100px 30px 0 30px;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+select {
+  padding: 0 30px;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://storage.googleapis.com/peakactivity-site-assets/partners/downArrow.png) 96% / 15% no-repeat
+    rgb(255, 255, 255);
+  background-size: 10px;
+}
+select:focus,
+input:focus {
+  outline: none;
+}
+.dropInput {
+  height: 45px;
+}

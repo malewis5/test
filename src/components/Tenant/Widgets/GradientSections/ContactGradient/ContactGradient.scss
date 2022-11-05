@@ -1,0 +1,144 @@
+.gradientContainer {
+  height: 598px;
+  width: 100%;
+  background: linear-gradient(180deg, #001117 0%, #072530 100%);
+
+  .leftText {
+    @media (min-width: 400px) {
+      text-align: left;
+    }
+    h3 {
+      text-align: left !important;
+      color: #ffffff;
+      font-size: 40px;
+      letter-spacing: -0.63px;
+      line-height: 45px;
+      margin-bottom: 15px;
+    }
+    p {
+      text-align: left;
+      color: #839398;
+      font-size: 17px;
+      letter-spacing: 0;
+      line-height: 26.6px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contactBoxContainer {
+    @media (max-width: 950px) {
+      margin: 0 auto;
+    }
+    .contactBox {
+      box-sizing: border-box;
+      height: 116px;
+      max-width: 465px;
+      border: 1px solid #1f3640;
+      border-radius: 9px;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+    }
+
+    .email {
+      margin-left: 30px;
+
+      width: 50px;
+    }
+    .phone {
+      margin-left: 30px;
+
+      width: 50px;
+    }
+    .messaging {
+      margin-left: 30px;
+
+      width: 50px;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    .logos {
+      margin: 25px auto 0 auto;
+      @media (max-width: 767px) {
+        margin: 18px auto 0 auto;
+      }
+      img {
+        margin-right: 0.7rem;
+      }
+    }
+
+    .boxText {
+      margin-left: 30px;
+      margin-top: 28px;
+      .topText {
+        opacity: 0.3;
+        color: #ffffff;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 15px;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      .bottomText {
+        margin-top: 10px;
+        color: #ffffff;
+        font-size: 26px;
+        letter-spacing: -0.41px;
+        line-height: 32px;
+      }
+      .emailFont {
+        margin-top: 10px;
+        color: #ffffff;
+        letter-spacing: -0.41px;
+        line-height: 32px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gradientContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    .leftText {
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .gradientContainer {
+    margin-top: -50px;
+    .leftText {
+      padding: 0;
+    }
+    .contactBoxContainer {
+      .contactBox {
+        .follow {
+          display: none;
+        }
+      }
+    }
+  }
+  .margin {
+    margin: 96px 30px 0 30px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .gradientContainer {
+    margin-top: -80px;
+  }
+  .margin {
+    padding-top: 133px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+  }
+}

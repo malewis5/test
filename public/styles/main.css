@@ -1,0 +1,212 @@
+.h-full {
+  height: 100%;
+}
+.min-h-full {
+  min-height: 100%;
+}
+.padding-zero,
+.no-padding,
+.zero-padding {
+  padding: 0;
+}
+.padding {
+  padding: 15px;
+}
+.margin-zero,
+.zero-margin {
+  margin: 0;
+}
+.margin {
+  margin: 15px;
+}
+.margin-right {
+  margin-right: 15px !important;
+}
+.margin-top {
+  margin-top: 15px !important;
+}
+.padding-top {
+  padding-top: 15px;
+}
+.margin-bottom {
+  margin-bottom: 15px !important;
+}
+.margin-left {
+  margin-left: 15px !important;
+}
+.float-right {
+  float: right !important;
+}
+.float-left {
+  float: left !important;
+}
+.text-center,
+.center-text {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.uppercase {
+  text-transform: uppercase !important;
+}
+.underline {
+  text-decoration: underline;
+}
+.no-text-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.is-hidden {
+  display: none !important;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.inline-block {
+  display: inline-block;
+}
+.overflow {
+  overflow: hidden;
+}
+.error-text {
+  color: red;
+}
+.pointer {
+  cursor: pointer;
+}
+.noclick {
+  pointer-events: none;
+}
+.flex {
+  display: flex;
+}
+.flex-content {
+  flex: 1 0 auto;
+}
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+.flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.global-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pageError {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+a {
+  color: #0074b3;
+  text-decoration: none;
+}
+.fakeClass {
+  color: yellow;
+}
+.white {
+  color: white;
+}
+.red {
+  color: red;
+}
+.loader-margin-top {
+  margin-top: 150px;
+}
+.fadeIn {
+  animation: fade-in 0.3s ease-out;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.transition {
+  transition: 0.3s all;
+}
+p,
+ul {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+button {
+  outline: none;
+  outline-color: white;
+  outline-style: none;
+}
+hr {
+  height: 1px !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  body,
+  html {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+}

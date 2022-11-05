@@ -1,0 +1,61 @@
+.formField {
+  margin-bottom: 15px;
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 0.85rem;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 0.85rem;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 0.85rem;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 0.85rem;
+  }
+  label {
+    color: #292a2a;
+    font-size: 0.7rem;
+  }
+}
+
+.textInput {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+.formError {
+  color: red;
+  margin-left: 5px;
+  font-size: 0.75rem;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.error {
+  input,
+  .phoneInputOverlay {
+    border: 1px solid #de0000;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.overlayInputContainer {
+  position: relative;
+
+  .textInputHidden {
+    display: none;
+  }
+}

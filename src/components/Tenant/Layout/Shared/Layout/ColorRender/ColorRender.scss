@@ -1,0 +1,25 @@
+@import '../../../../Core/scss/variables.scss';
+
+.squareContainer {
+  display: flex;
+  .square {
+    margin: 3px;
+    height: 2rem;
+    width: 2rem;
+    padding: 2px;
+    transition: 0.5s background-color;
+    color: $color-white;
+
+    &:hover,
+    &.active {
+      color: $color-white;
+      border: 2px solid $color-blue-light-primary;
+      color: $color-pdp-sub-title;
+    }
+  }
+
+  .squareSelected {
+    border-color: $color-blue-light-primary !important;
+    color: $color-pdp-sub-title;
+  }
+}

@@ -1,0 +1,42 @@
+.filterRow {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  @media (max-width: 767px) {
+    display: block;
+    margin: 15px;
+  }
+}
+
+.flex {
+  // flex: 1;
+  .filterSelectLabel {
+    font-weight: 800;
+  }
+  .sortBy {
+    height: 35px;
+    width: 180px;
+    border: 1px solid #d6d0d0;
+    border-radius: 4px;
+    background: white;
+    color: #4a4848;
+  }
+}
+
+.filterSelectContainer {
+  margin-left: 15px;
+}
+
+.filterWrap {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  .hideShowFilter {
+    padding-right: 18px;
+    cursor: pointer;
+    span {
+      margin-right: 8px;
+      font-weight: 800;
+    }
+  }
+}

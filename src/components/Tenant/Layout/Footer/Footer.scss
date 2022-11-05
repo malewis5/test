@@ -1,0 +1,222 @@
+.footer {
+  height: auto;
+  background: linear-gradient(180deg, #072530 0%, #001117 100%);
+  display: flex;
+  flex-direction: column;
+
+  .footerBanner {
+    z-index: 1;
+    margin: 0 auto;
+  }
+
+  .patternBackground {
+    background-image: url('/static/pattern-top.png');
+
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    z-index: 0;
+  }
+  .patternBackgroundTablet {
+    display: none;
+  }
+  .patternBackgroundMobile {
+    display: none;
+  }
+
+  .topBar {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    margin: 50px auto 0 auto;
+
+    img {
+      margin-top: 5px;
+      height: 23px;
+      width: 203px;
+    }
+
+    h2 {
+      margin-left: 480px;
+      color: white;
+      font-size: 26px;
+      letter-spacing: -0.41px;
+      line-height: 33px;
+      white-space: nowrap;
+    }
+  }
+
+  hr {
+    margin: 50px 0;
+    width: 100%;
+    height: 1px;
+    border: 1px solid #ffffff;
+    opacity: 0.1;
+  }
+
+  .legal {
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+
+    p {
+      margin-top: 20px;
+      color: #454545;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 15px;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    .patternBackground {
+      display: none;
+    }
+    .patternBackgroundMobile {
+      display: none;
+    }
+    .patternBackgroundTablet {
+      background-image: url('/static/pattern-top-tablet.png');
+      display: flex;
+      width: 100%;
+      height: 389px;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 0;
+    }
+    .topBar {
+      img {
+        margin-left: 50px;
+      }
+      h2 {
+        position: absolute;
+        right: 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 787px) {
+  .footer {
+    width: 100%;
+    .patternBackgroundTablet {
+      display: none;
+    }
+    .patternBackgroundMobile {
+      display: flex;
+      background-image: url('/static/patternFooterMobile.png');
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% auto;
+      z-index: 0;
+    }
+    .footerNavigation {
+      display: flex;
+    }
+
+    .topBar {
+      width: auto;
+      img {
+        margin-left: 0;
+      }
+
+      .logo {
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        display: none;
+      }
+    }
+  }
+}
+
+.bannerContainer {
+  margin-top: -20px;
+  width: 960px;
+  height: 192px;
+
+  .bannerContent {
+    width: 960px;
+
+    .bannerText {
+      margin: 45px 0 0 45px;
+
+      h3 {
+        color: white;
+        font-size: 40px;
+        line-height: 51px;
+        letter-spacing: -0.63px;
+        align-items: left;
+      }
+    }
+
+    .bannerStartBtn {
+      margin: -60px 45px 0px 0;
+      float: right;
+
+      button {
+        cursor: pointer;
+        height: 36px;
+        width: 140px;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #187074;
+        background-color: white;
+        border-radius: 18px;
+        border: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bannerContainer {
+    width: 668px;
+    .bannerContent {
+      width: 668px;
+    }
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .bannerContainer {
+    width: 350px;
+    height: auto;
+
+    .bannerContent {
+      width: 100%;
+
+      .bannerText {
+        text-align: center;
+        margin: 20px 0 0 0;
+
+        h3 {
+          font-size: 30px;
+          letter-spacing: -0.48px;
+          line-height: 40px;
+          text-align: center;
+          white-space: nowrap;
+        }
+      }
+
+      .bannerStartBtn {
+        margin: 20px 100px 20px 0;
+      }
+    }
+  }
+}
