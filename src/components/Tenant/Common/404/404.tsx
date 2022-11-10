@@ -1,8 +1,7 @@
+import { THEME_BUTTON_TYPES, ThemedButton } from '@peakactivity/merce-shared-frontend-components'
 import Link from 'next/link'
 import * as React from 'react'
 
-import ThemedButton from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Button/Button'
-import { THEME_BUTTON_TYPES } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Theme/ThemeWrapper'
 import css from './404.scss'
 
 export interface IAppProps {

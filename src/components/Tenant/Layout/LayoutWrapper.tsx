@@ -1,8 +1,7 @@
+import { ICategoryTree, IPage } from '@peakactivity/merce-shared-frontend-components'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 
-import { IPage } from '../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Page'
-import { ICategoryTree } from '../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Product'
 import ThemeWrapper from '../Common/Theme/ThemeWrapper'
 import Footer from './Footer/Footer'
 import Header from './Header/Header'

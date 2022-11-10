@@ -1,4 +1,4 @@
-import { IBlogCategory, IBlogPost } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Blog'
+import { IBlogCategory, IBlogPost } from '@peakactivity/merce-shared-frontend-components'
 
 export interface IBlogPostPage extends IBlogPost {
   tags: string

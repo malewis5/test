@@ -1,11 +1,8 @@
+import { Col, IBlogOptions, Row } from '@peakactivity/merce-shared-frontend-components'
 import React, { useState } from 'react'
 
-import { IBlogOptions } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Blog'
-// import ThemedButton from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Button/Button'
-import { Col, Row } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Layout'
 import ThemedButton from '../../../Common/Button/ThemedButton'
 import { THEME_BUTTON_TYPES } from '../../../Common/Theme/ThemeWrapper'
-// import { THEME_BUTTON_TYPES } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Theme/ThemeWrapper'
 import SubscribeModal from '../../../Widgets/Hubspot/SubscribeModal/SubscribeModal'
 import { IBlogPostPage } from '../'
 import BlogThumbnail from '../BlogThumbnail/BlogThumbnail'

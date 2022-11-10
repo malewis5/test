@@ -1,11 +1,8 @@
 /* eslint-disable react/jsx-no-bind */
+import { has, IBlogOptions, THEME_BUTTON_TYPES, ThemedButton } from '@peakactivity/merce-shared-frontend-components'
 import Link from 'next/link'
 import * as React from 'react'
 
-import { IBlogOptions } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Blog'
-import ThemedButton from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Button/Button'
-import { THEME_BUTTON_TYPES } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Theme/ThemeWrapper'
-import { has } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/lodash'
 import { IBlogPostPage } from '..'
 import css from './BlogThumbnail.scss'
 

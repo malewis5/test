@@ -1,12 +1,12 @@
-import * as React from 'react'
-
-import { ICatalogConfig } from '../../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Catalog/Catalog'
 import {
+  has,
+  ICatalogConfig,
   ICatalogNavigationItem,
   ICatalogNavigationItemValue,
   IFilterItem,
-} from '../../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Catalog/Navigation/Navigation'
-import { has } from '../../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/lodash'
+} from '@peakactivity/merce-shared-frontend-components'
+import * as React from 'react'
+
 import Accordion from '../../../../Common/Accordion/Accordion'
 import PrimaryButton from '../../../../Common/Button/PrimaryButton'
 import Loading from '../../../../Common/Loading/Loading'

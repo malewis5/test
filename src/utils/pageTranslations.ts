@@ -1,9 +1,10 @@
-import { CMS_API_CALLS } from '../components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Services/API/CMS'
 import {
+  CACHE_CONTSTANT,
+  CMS_API_CALLS,
   ITranslationPageApiParams,
   ITranslationPageResponse,
-} from '../components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Services/API/CMS/page'
-import CACHE_CONTSTANT from '../components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/cache/constants'
+} from '@peakactivity/merce-shared-frontend-components'
+
 import getDefaultCmsTransport from '../services/api/cmsInterceptor'
 
 const getTranslatedPage = async (query: { [x: string]: any }) => {

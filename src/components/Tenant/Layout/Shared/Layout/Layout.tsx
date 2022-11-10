@@ -1,9 +1,7 @@
+import { FooterContainer, HeaderContainer, ThemeWrapper } from '@peakactivity/merce-shared-frontend-components'
 import * as React from 'react'
 
-import ThemeWrapper from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Theme/ThemeWrapper'
-import FooterContainer from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Layout/FooterContainer/FooterContainer'
-import HeaderContainer from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Layout/HeaderContainer/HeaderContainer'
-import css from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Layout/Layout.scss'
+import css from '../../LayoutWrapper.scss'
 import BodyContainer from './BodyContainer/BodyContainer'
 
 export interface ILayoutProps {

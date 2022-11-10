@@ -1,8 +1,7 @@
+import { Col, ICategory, ICategoryTree, Row } from '@peakactivity/merce-shared-frontend-components'
 import Link from 'next/link'
 import * as React from 'react'
 
-import { ICategory, ICategoryTree } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Catalog'
-import { Col, Row } from '../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Layout'
 import css from './BlogNavigation.scss'
 
 export interface IBlogCategoryNavigationProps {

@@ -1,10 +1,8 @@
+import { CACHE_CONTSTANT, Loader, OmniPage } from '@peakactivity/merce-shared-frontend-components'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 
-import Loader from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Loader/Loader'
-import CACHE_CONTSTANT from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/cache/constants'
-import OmniPage from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/OmniPage'
 import { PageNotFound } from '../src/components/Tenant/Common/404/404'
 import { ITranslationPageResponse, PAGES_API_CALLS } from '../src/components/Tenant/Pages/API/pages-api-call'
 import renderPropsMethods from '../src/components/Tenant/Widgets/index'

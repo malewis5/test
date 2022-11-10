@@ -1,6 +1,6 @@
+import { CACHE_CONTSTANT } from '@peakactivity/merce-shared-frontend-components'
 import { AxiosResponse } from 'axios'
 
-import CACHE_CONTSTANT from '../../components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/cache/constants'
 import logProviderFactory from '../../utils/logs/logProviderFactory'
 import getDefaultCmsTransport from './cmsInterceptor'
 

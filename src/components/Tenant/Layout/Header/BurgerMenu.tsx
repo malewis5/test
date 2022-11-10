@@ -1,8 +1,7 @@
+import { THEME_BUTTON_TYPES, ThemedButton } from '@peakactivity/merce-shared-frontend-components'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
-import ThemedButton from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Button/Button'
-import { THEME_BUTTON_TYPES } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Theme/ThemeWrapper'
 import { HubspotCustomSubscribeForm } from '../../Widgets/Hubspot/HubspotForms'
 import css from './BurgerMenu.scss'
 import { ICategory, ISubcategory } from './Header'

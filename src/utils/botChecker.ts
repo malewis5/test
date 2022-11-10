@@ -1,4 +1,4 @@
-import { has } from '../components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/lodash'
+import { has } from '@peakactivity/merce-shared-frontend-components'
 
 const isBot = (ctx: any) => {
   if (ctx?.req) {

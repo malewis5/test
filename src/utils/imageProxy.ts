@@ -1,4 +1,5 @@
-import stripTrailingSlash from '../components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/stripTrailingSlash'
+import { stripTrailingSlash } from '@peakactivity/merce-shared-frontend-components'
+
 import { IMAGE_TRANSFORMATION_PROXY_URL } from '../settings/variables'
 
 export enum IMAGE_PROXY_TYPES {

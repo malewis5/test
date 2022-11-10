@@ -1,3 +1,4 @@
+import { ICategory, THEME_BUTTON_TYPES, ThemedButton } from '@peakactivity/merce-shared-frontend-components'
 import { AxiosResponse } from 'axios'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -5,9 +6,6 @@ import React, { useEffect, useState } from 'react'
 
 import getDefaultCmsTransport from '../../../../services/api/cmsInterceptor'
 import logProviderFactory from '../../../../utils/logs/logProviderFactory'
-import { ICategory } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Catalog'
-import ThemedButton from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Button/Button'
-import { THEME_BUTTON_TYPES } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Theme/ThemeWrapper'
 import css from './InsightCards.scss'
 
 const sampleimg = '../../../../static/sampleblog.png'
@@ -66,7 +64,7 @@ const InsightCards = (props: any) => {
               slug
               title
             }
-          }         
+          }
         }
         `
       const filteredResponse: AxiosResponse = await getDefaultCmsTransport(true).post('/graphql', {

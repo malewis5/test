@@ -1,6 +1,6 @@
+import { find } from '@peakactivity/merce-shared-frontend-components'
 import * as React from 'react'
 
-import { find } from '../../../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/lodash'
 import css from './Sort.scss'
 
 type SelectChangeEvent = React.ChangeEvent<HTMLSelectElement>

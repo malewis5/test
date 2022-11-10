@@ -1,15 +1,15 @@
+import {
+  CACHE_CONTSTANT,
+  CMS_API_CALLS,
+  ICategory,
+  IPage,
+  ITransport,
+  OmniPage,
+} from '@peakactivity/merce-shared-frontend-components'
 import Head from 'next/head'
 import Router from 'next/router'
 import * as React from 'react'
 
-import { IPage } from '../../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Page'
-import { ICategory } from '../../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Product'
-import {
-  CMS_API_CALLS,
-  ITransport,
-} from '../../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Services/API/CMS'
-import CACHE_CONTSTANT from '../../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/cache/constants'
-import OmniPage from '../../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/OmniPage'
 import BlogLanding from '../../src/components/Tenant/Layout/Blog/BlogLanding/BlogLanding'
 import renderPropsMethods from '../../src/components/Tenant/Widgets/index'
 import getDefaultCmsTransport from '../../src/services/api/cmsInterceptor'

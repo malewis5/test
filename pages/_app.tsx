@@ -1,16 +1,17 @@
 import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form'
+import {
+  CACHE_CONTSTANT,
+  combineQueries,
+  ICategoryTree,
+  ICombineQueryBody,
+  ICombineQueryResponse,
+  IPage,
+} from '@peakactivity/merce-shared-frontend-components'
 import { NextPageContext } from 'next'
 import App, { AppInitialProps } from 'next/app'
 import Head from 'next/head'
 import * as React from 'react'
 
-import { IPage } from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Page'
-import { ICategoryTree } from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Product'
-import CACHE_CONTSTANT from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/cache/constants'
-import combineQueries, {
-  ICombineQueryBody,
-  ICombineQueryResponse,
-} from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/combineQueries'
 import GlobalLayout from '../src/components/Tenant/Layout/LayoutWrapper'
 import getDefaultCmsTransport from '../src/services/api/cmsInterceptor'
 import logProviderFactory from '../src/utils/logs/logProviderFactory'

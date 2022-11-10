@@ -1,12 +1,12 @@
+import {
+  filterContentBlocksByDate,
+  getContentBlocksByTag,
+  IContentBlock,
+} from '@peakactivity/merce-shared-frontend-components'
 import * as React from 'react'
 
 import getDefaultCmsTransport from '../../../../services/api/cmsInterceptor'
 import logProviderFactory from '../../../../utils/logs/logProviderFactory'
-import {
-  filterContentBlocksByDate,
-  getContentBlocksByTag,
-} from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Services/API/CMS/content-blocks'
-import { IContentBlock } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/OmniPage/interfaces'
 
 interface IContentBlocksResponse {
   error: string

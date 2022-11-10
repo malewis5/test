@@ -1,7 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import * as React from 'react'
 
-//import CACHE_CONTSTANT from '../src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/cache/constants'
 import { CMS_API, GTM_BODY_SCRIPT, GTM_HEAD_SCRIPT } from '../src/settings/variables'
 import addIE11Lib from '../src/utils/ie11'
 

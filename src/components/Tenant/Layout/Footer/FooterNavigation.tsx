@@ -1,7 +1,7 @@
+import { Col, Row } from '@peakactivity/merce-shared-frontend-components'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-import { Col, Row } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Layout'
 import SubscribeModal from '../../Widgets/Hubspot/SubscribeModal/SubscribeModal'
 import css from './FooterNavigation.scss'
 

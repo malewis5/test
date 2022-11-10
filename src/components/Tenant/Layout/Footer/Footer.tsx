@@ -1,6 +1,6 @@
+import { IPage } from '@peakactivity/merce-shared-frontend-components'
 import * as React from 'react'
 
-import { IPage } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Page'
 import css from './Footer.scss'
 import FooterBanner from './FooterBanner'
 import FooterNavigation from './FooterNavigation'

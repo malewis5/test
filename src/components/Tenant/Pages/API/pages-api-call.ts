@@ -1,7 +1,5 @@
+import { appendQueryString, IPage } from '@peakactivity/merce-shared-frontend-components'
 import { AxiosInstance } from 'axios'
-
-import { IPage } from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Interfaces/Strapi/Page'
-import appendQueryString from '../../../Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/appendQueryString'
 
 export interface ITranslationPageResponse {
   data: IPage | null

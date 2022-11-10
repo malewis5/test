@@ -25,7 +25,7 @@ module.exports = {
       },
     },
   ],
-  ignorePatterns: ['src/components/Omnimerse/cms/Frontend/omnistudio-frontend-components/*'],
+
   rules: {
     'simple-import-sort/imports': 'error',
     'sort-imports': 'off',

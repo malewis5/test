@@ -1,7 +1,7 @@
+// env variables
+import { appendQueryString } from '@peakactivity/merce-shared-frontend-components'
 import axios, { AxiosInstance } from 'axios'
 
-// env variables
-import appendQueryString from '../../components/Omnimerse/cms/Frontend/omnistudio-frontend-components/src/Common/Utils/appendQueryString'
 import { CACHE_ENDPOINT, CACHE_SERVICE_ENDPOINT, CMS_API, CMS_SERVICE_ENDPOINT } from '../../settings/variables'
 import logProviderFactory from '../../utils/logs/logProviderFactory'
 
